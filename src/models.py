@@ -21,7 +21,7 @@ class User(Base):
 class Favorites(Base):
     __tablename__ = "favorites"
     id = Column(Integer, primary_key=True)
-    user_id = Column(Integer, ForeignKey("usuario.id"))
+    user_id = Column(Integer, ForeignKey("user.id"))
     characters_id = Column(Integer)
     planets_id = Column(Integer)
     vehicles_id = Column(Integer)
